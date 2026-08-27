@@ -117,4 +117,5 @@ MIT License — free to use, modify, and distribute.
 ## Authors
 
 Original [mod](https://modrinth.com/mod/scaled-dragon-fight) by [ZephByte](https://github.com/ZephByte)
+
 Overhaled by [H3LiiiX](https://github.com/H3LiiiX)
