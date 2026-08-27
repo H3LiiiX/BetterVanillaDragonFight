@@ -1,6 +1,6 @@
-package com.zephbyte.scaleddragonfight.mixin;
+package com.h3liiix.bettervanilladragonfight.mixin;
 
-import com.zephbyte.scaleddragonfight.DragonEventHandler;
+import com.h3liiix.bettervanilladragonfight.DragonEventHandler;
 import net.minecraft.world.entity.boss.enderdragon.EnderDragon;
 import net.minecraft.world.level.dimension.end.EnderDragonFight;
 import net.minecraft.server.level.ServerLevel;
@@ -27,7 +27,7 @@ public abstract class EnderDragonFightMixin {
             at = @At("HEAD"),
             cancellable = true
     )
-    private void scaleddragonfight_onPreCreateDragon(CallbackInfoReturnable<EnderDragon> cir) { // Updated parameter
+    private void bettervanilladragonfight_onPreCreateDragon(CallbackInfoReturnable<EnderDragon> cir) { // Updated parameter
         EnderDragonFight fightInstance = (EnderDragonFight) (Object) this;
 
         // We only want to delay the *very first* dragon spawn in this world.

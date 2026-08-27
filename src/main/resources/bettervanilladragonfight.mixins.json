@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.h3liiix.bettervanilladragonfight.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "EnderDragonFightAccessor",
+    "EnderDragonFightMixin",
+    "EnderDragonMixin",
+    "EndSpikeMixin",
+    "EndCrystalMixin",
+    "EndSpikeFeatureMixin",
+    "ShulkerAccessor",
+    "ShulkerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

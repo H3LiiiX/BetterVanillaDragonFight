@@ -1,11 +1,11 @@
-package com.zephbyte.scaleddragonfight
+package com.h3liiix.bettervanilladragonfight
 
 // Import specific config values needed
-import com.zephbyte.scaleddragonfight.ConfigManager.additionalHealthPerPlayer
-import com.zephbyte.scaleddragonfight.ConfigManager.baseDragonHealth
-import com.zephbyte.scaleddragonfight.ConfigManager.countCreativeModePlayers
-import com.zephbyte.scaleddragonfight.ConfigManager.enableBroadcast
-import com.zephbyte.scaleddragonfight.ConfigManager.scaleWithOnePlayer
+import com.h3liiix.bettervanilladragonfight.ConfigManager.additionalHealthPerPlayer
+import com.h3liiix.bettervanilladragonfight.ConfigManager.baseDragonHealth
+import com.h3liiix.bettervanilladragonfight.ConfigManager.countCreativeModePlayers
+import com.h3liiix.bettervanilladragonfight.ConfigManager.enableBroadcast
+import com.h3liiix.bettervanilladragonfight.ConfigManager.scaleWithOnePlayer
 import net.minecraft.world.entity.ai.attributes.Attributes
 import net.minecraft.world.entity.boss.enderdragon.EnderDragon
 import net.minecraft.server.level.ServerPlayer

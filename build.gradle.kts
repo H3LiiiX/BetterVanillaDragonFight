@@ -27,7 +27,7 @@ loom {
     splitEnvironmentSourceSets()
 
     mods {
-        register("scaleddragonfight") {
+        register("bettervanilladragonfight") {
             sourceSet("main")
             sourceSet("client")
         }
@@ -36,6 +36,8 @@ loom {
 
 
 repositories {
+    maven { url = uri("https://maven.terraformersmc.com/") }
+    maven { url = uri("https://maven.architectury.dev/") }
     // Add repositories to retrieve artifacts from in here.
     // You should only use this when depending on other mods because
     // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
@@ -44,6 +46,8 @@ repositories {
 }
 
 dependencies {
+    implementation("com.terraformersmc:modmenu:+")
+    implementation("me.shedaniel.cloth:cloth-config-fabric:+")
     // To change the versions see the gradle.properties file
     minecraft("com.mojang:minecraft:${project.property("minecraft_version")}")
     implementation("net.fabricmc:fabric-loader:${project.property("loader_version")}")
@@ -97,9 +101,12 @@ publishing {
 
     // See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
     repositories {
+    maven { url = uri("https://maven.terraformersmc.com/") }
+    maven { url = uri("https://maven.architectury.dev/") }
         // Add repositories to publish to here.
         // Notice: This block does NOT have the same function as the block in the top level.
         // The repositories here will be used for publishing your artifact, not for
         // retrieving dependencies.
     }
 }
+

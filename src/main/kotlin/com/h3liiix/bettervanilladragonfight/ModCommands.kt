@@ -1,7 +1,7 @@
-package com.zephbyte.scaleddragonfight
+package com.h3liiix.bettervanilladragonfight
 
 import com.mojang.brigadier.CommandDispatcher
-import com.zephbyte.scaleddragonfight.ConfigManager.enableMod // Direct access to config
+import com.h3liiix.bettervanilladragonfight.ConfigManager.enableMod // Direct access to config
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback
 import net.minecraft.commands.Commands
 import net.minecraft.commands.CommandSourceStack
@@ -26,9 +26,9 @@ object ModCommands {
                     .executes { context ->
                         ConfigManager.loadConfig() // Reload config from ConfigManager
                         val feedbackMsg = if (enableMod) { // Check enableMod from ConfigManager
-                            "Scaled Dragon Fight configuration reloaded. Mod is ENABLED."
+                            "Better Vanilla Dragon Fight configuration reloaded. Mod is ENABLED."
                         } else {
-                            "Scaled Dragon Fight configuration reloaded. Mod is DISABLED."
+                            "Better Vanilla Dragon Fight configuration reloaded. Mod is DISABLED."
                         }
                         context.source.sendSuccess({ Component.literal(feedbackMsg) }, true)
                         1 // Return 1 for success

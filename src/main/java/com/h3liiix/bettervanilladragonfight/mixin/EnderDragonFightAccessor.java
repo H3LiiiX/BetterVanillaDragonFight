@@ -1,4 +1,4 @@
-package com.zephbyte.scaleddragonfight.mixin;
+package com.h3liiix.bettervanilladragonfight.mixin;
 
 import net.minecraft.world.level.dimension.end.EnderDragonFight;
 import net.minecraft.world.entity.boss.enderdragon.EndCrystal;

@@ -1,7 +1,7 @@
-package com.zephbyte.scaleddragonfight
+package com.h3liiix.bettervanilladragonfight
 
-import com.zephbyte.scaleddragonfight.ConfigManager.enableMod // Direct access to config
-import com.zephbyte.scaleddragonfight.mixin.EnderDragonFightAccessor
+import com.h3liiix.bettervanilladragonfight.ConfigManager.enableMod // Direct access to config
+import com.h3liiix.bettervanilladragonfight.mixin.EnderDragonFightAccessor
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents
 import net.minecraft.world.entity.boss.enderdragon.EnderDragon
