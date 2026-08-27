@@ -6,6 +6,10 @@ For servers, no installation is needed on the client — just drop it into your 
 
 ---
 
+![Dragon Fight](https://github.com/H3LiiiX/BetterVanillaDragonFight/blob/main/images/Overview.png)
+
+---
+
 ## Features
 
 - **Dynamic Health Scaling:** The Ender Dragon's max health increases with each eligible player in The End.
