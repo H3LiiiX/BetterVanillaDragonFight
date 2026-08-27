@@ -1,12 +1,10 @@
 # Better Vanilla Dragon Fight
 
-A lightweight **Fabric mod** that has various configurable options to enhance the **Ender Dragon Fight** whilst keeping the **Vanilla feel of Minecraft**
-
-For servers, no installation is needed on the client — just drop it into your server's `mods` folder and configure it to your liking.
+A lightweight **Fabric mod** that has various configurable options to enhance the **Ender Dragon Fight** whilst keeping the **Vanilla feel of Minecraft**. For servers, no installation is needed on the client.
 
 ---
 
-![Dragon Fight](https://github.com/H3LiiiX/BetterVanillaDragonFight/blob/main/images/Overview.png)
+![Dragon Fight](https://raw.githubusercontent.com/H3LiiiX/BetterVanillaDragonFight/refs/heads/main/images/Overview.png)
 
 ---
 
@@ -14,14 +12,14 @@ For servers, no installation is needed on the client — just drop it into your 
 
 - **Dynamic Health Scaling:** The Ender Dragon's max health increases with each eligible player in The End.
 - **XP Distribution:** Split dragon kill XP equally among all players and scale XP payouts based on player count.
-- **Enhanced Towers & Crystals:** Cage every end crystal, replace small towers with bigger ones, and modify crystal healing multipliers.
+- **Enhanced Towers & Crystals:** Cage every end crystal, replace small towers with bigger ones, and apply a crystal healing multiplier.
 - **Tower Shulkers:** Spawns Shulkers on the sides of the end towers.
-- **Cage Mining Fatigue:** Optional localized mining fatigue around end crystals to make breaking cages more challenging.
-- **Dynamic Crystal Respawns:** The dragon can regenerate end crystals and cages when perching on the fountain.
+- **Cage Mining Fatigue:** Localized mining fatigue around end crystals to make breaking cages more challenging.
+- **Dynamic Crystal Respawns:** The dragon can regenerate end crystals and cages when perching.
 - **Initial Spawn Delay:** Optionally delay the very first dragon spawn and show a countdown on players’ XP bars.
 - **Client Config:** Fully integrates with Mod Menu for an intuitive settings screen.
 - **Broadcast Messages:** Optional announcements when a scaled dragon appears.
-- **In-Game Reload:** `/bettervanilladragonfight reload` command to reload configuration without restarting the server.
+- **In-Game Reload:** `/bettervanilladragonfight reload` to reload config without restarting the server.
 
 ---
 
@@ -95,7 +93,6 @@ Requires permission level 2 (OP status).
 - Minecraft: `26.2`
 - Fabric Loader: Latest stable version for your Minecraft version
 - Fabric API required
-- **Server-side only** — no client-side installation needed
 
 
 > **Mod/Datapack Interactions:** This mod modifies vanilla Ender Dragon spawning logic. It may exhibit unintended behavior or conflicts with other mods/datapacks that introduce custom dragon spawning mechanics (e.g., True Ending). While I aim to improve compatibility in the future, full support for third-party dragon overhauls is not guaranteed.
@@ -114,7 +111,7 @@ Requires permission level 2 (OP status).
 
 ## License
 
-MIT License — free to use, modify, and distribute.
+MIT License - free to use, modify, and distribute.
 
 ---
 
