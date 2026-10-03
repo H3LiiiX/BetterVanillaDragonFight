@@ -174,7 +174,7 @@ public abstract class EnderDragonMixin {
                         if (dummy != null) {
                             dummy.setPos(spawnPos.getX() + 0.5, spawnPos.getY(), spawnPos.getZ() + 0.5);
                             dummy.setShowBottom(false);
-                            dummy.setInvulnerable(true);
+                            dummy.setPermanentlyInvulnerable(true);
                             dummy.setBeamTarget(new net.minecraft.core.BlockPos(spike.getCenterX(), spike.getHeight(), spike.getCenterZ()));
                             level.addFreshEntity(dummy);
                             this.bettervanilladragonfight_dummyCrystals.add(dummy);
@@ -212,8 +212,8 @@ public abstract class EnderDragonMixin {
                     
                     if (ConfigManager.INSTANCE.getPerchRegeneratesCages()) {
                         com.h3liiix.bettervanilladragonfight.PerchContext.isPerchRegen.set(true);
-                        net.minecraft.world.level.levelgen.feature.configurations.EndSpikeConfiguration configuration = new net.minecraft.world.level.levelgen.feature.configurations.EndSpikeConfiguration(false, java.util.List.of(spike), (net.minecraft.core.BlockPos) null);
-                        net.minecraft.world.level.levelgen.feature.Feature.END_SPIKE.place(configuration, level, level.getChunkSource().getGenerator(), level.getRandom(), new net.minecraft.core.BlockPos(spike.getCenterX(), 45, spike.getCenterZ()));
+                        net.minecraft.world.level.levelgen.feature.EndSpikeFeature feature = new net.minecraft.world.level.levelgen.feature.EndSpikeFeature(java.util.List.of(spike), false, java.util.Optional.empty());
+                        feature.place(level, level.getChunkSource().getGenerator(), level.getRandom(), new net.minecraft.core.BlockPos(spike.getCenterX(), 45, spike.getCenterZ()));
                         com.h3liiix.bettervanilladragonfight.PerchContext.isPerchRegen.set(false);
                     } else {
                         net.minecraft.core.BlockPos bedrockPos = new net.minecraft.core.BlockPos(spike.getCenterX(), spike.getHeight(), spike.getCenterZ());

@@ -21,7 +21,7 @@ public abstract class EndSpikeFeatureMixin {
     }
 
     @org.spongepowered.asm.mixin.injection.Inject(method = "placeSpike", at = @At("TAIL"))
-    private void bettervanilladragonfight_onPlaceSpike(ServerLevelAccessor level, net.minecraft.util.RandomSource random, net.minecraft.world.level.levelgen.feature.configurations.EndSpikeConfiguration config, EndSpikeFeature.EndSpike spike, org.spongepowered.asm.mixin.injection.callback.CallbackInfo ci) {
+    private void bettervanilladragonfight_onPlaceSpike(ServerLevelAccessor level, net.minecraft.util.RandomSource random, EndSpikeFeature.EndSpike spike, org.spongepowered.asm.mixin.injection.callback.CallbackInfo ci) {
         if (spike.isGuarded() && com.h3liiix.bettervanilladragonfight.ConfigManager.INSTANCE.getEnableCageCover()) {
             net.minecraft.core.BlockPos.MutableBlockPos pos = new net.minecraft.core.BlockPos.MutableBlockPos();
             for (int dx = -2; dx <= 2; ++dx) {
